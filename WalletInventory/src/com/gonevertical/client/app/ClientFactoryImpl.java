@@ -85,6 +85,8 @@ public class ClientFactoryImpl implements ClientFactory {
    * init
    */
   public ClientFactoryImpl() {
+    layout.start();
+    
     initGA();
     setGaVars();
 
@@ -166,10 +168,23 @@ public class ClientFactoryImpl implements ClientFactory {
     script.setLang("javascript");
     doc.getBody().appendChild(script);
   }
-
-  public static native void setGaVars() /*-{
+  
+  private static native void setGaVars() /*-{
     $wnd._gaq = $wnd._gaq || [];
     $wnd._gaq.push(['_setAccount', 'UA-2862268-28']);
+  }-*/;
+  
+  private void initAddSense() {
+    Document doc = Document.get();
+    ScriptElement script = doc.createScriptElement();
+    script.setSrc("https://pagead2.googlesyndication.com/pagead/show_ads.js");
+    script.setType("text/javascript");
+    script.setLang("javascript");
+    doc.getBody().appendChild(script);
+  }
+  
+  private native void setAddSenseVars() /*-{
+    
   }-*/;
 
   public void track() {

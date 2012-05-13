@@ -16,9 +16,11 @@ body {
   font-family: 'Puritan', arial, serif;
 }
 
-/* Google Web Fonts http://www.google.com/webfonts */ 
-@import url(http://fonts.googleapis.com/css?family=Puritan:400,700,400italic,700italic);
 
+.logoHtml {
+	font-family: 'Annie Use Your Telescope', arial, serif;
+	font-size: 300%;
+}
 
 /* on module load loading */
 .app-loading {

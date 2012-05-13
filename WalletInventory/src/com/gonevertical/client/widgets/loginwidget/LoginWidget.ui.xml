@@ -7,25 +7,25 @@
 	<g:HorizontalPanel>
 		<p1:LoadingWidget ui:field="wLoading"/>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE" horizontalAlignment="ALIGN_RIGHT">
-			<g:HTML wordWrap="true" ui:field="htmlNick">&nbsp;</g:HTML>
+			<g:HTML ui:field="htmlNick" wordWrap="false">&nbsp;</g:HTML>
 		</g:Cell>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE" horizontalAlignment="ALIGN_RIGHT">
-			<g:HTML wordWrap="true">&nbsp;&nbsp;</g:HTML>
+			<g:HTML wordWrap="false">&nbsp;&nbsp;</g:HTML>
 		</g:Cell>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE" horizontalAlignment="ALIGN_RIGHT">
-			<g:HTML wordWrap="true" ui:field="htmlUrl">&nbsp;</g:HTML>
+			<g:HTML wordWrap="false" ui:field="htmlUrl">&nbsp;</g:HTML>
 		</g:Cell>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE" horizontalAlignment="ALIGN_RIGHT">
-			<g:HTML wordWrap="true">&nbsp;&nbsp;</g:HTML>
+			<g:HTML wordWrap="false">&nbsp;&nbsp;</g:HTML>
 		</g:Cell>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE" horizontalAlignment="ALIGN_CENTER">
 			<g:Image ui:field="imgHelp"/>
 		</g:Cell>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE">
-			<g:HTML wordWrap="true">&nbsp;&nbsp;</g:HTML>
+			<g:HTML wordWrap="false">&nbsp;&nbsp;</g:HTML>
 		</g:Cell>
 		<g:Cell verticalAlignment="ALIGN_MIDDLE">
-			<g:HTML wordWrap="true" ui:field="htmlPlusOne"/>
+			<g:HTML wordWrap="false" ui:field="htmlPlusOne"/>
 		</g:Cell>
 	</g:HorizontalPanel>
 </ui:UiBinder> 

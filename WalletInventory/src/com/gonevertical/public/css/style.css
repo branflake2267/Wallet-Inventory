@@ -16,3 +16,53 @@ body {
   
   /*border:1px solid #00E6FF;*/
 }
+
+
+@font-face {
+  font-family: 'Puritan';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Puritan Bold Italic'), local('Puritan-BoldItalic'), url('http://themes.googleusercontent.com/static/fonts/puritan/v4/rFG3XkMJL75nUNZwCEIJqKRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('http://themes.googleusercontent.com/static/fonts/ubuntu/v4/kbP_6ONYVgE-bLa9ZRbvvnYhjbSpvc47ee6xR_80Hnw.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url('http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OMD20Sg9RTs7sUORCEN-7brIa-7acMAeDBVuclsi6Gc.woff') format('woff');
+}
+@font-face {
+  font-family: 'Puritan';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Puritan Italic'), local('Puritan-Italic'), url('http://themes.googleusercontent.com/static/fonts/puritan/v4/LNB5sZdDCuNlAjx55ZHq6LO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+@font-face {
+  font-family: 'Annie Use Your Telescope';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Annie Use Your Telescope'), local('AnnieUseYourTelescope'), url('http://themes.googleusercontent.com/static/fonts/annieuseyourtelescope/v3/2cuiO5VmaR09C8SLGEQjGgtSTT_xyPSRqbb82lxMsRF2IY20qb3OO3nusUf_NB58.woff') format('woff');
+}
+@font-face {
+  font-family: 'Puritan';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Puritan Bold'), local('Puritan-Bold'), url('http://themes.googleusercontent.com/static/fonts/puritan/v4/5jPLJ9f9Ab5G4ze71-FiQ73hpw3pgy2gAi-Ip7WPMi0.woff') format('woff');
+}
+@font-face {
+  font-family: 'Puritan';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Puritan Regular'), local('Puritan-Regular'), url('http://themes.googleusercontent.com/static/fonts/puritan/v4/qxQqFnYbtZ8dbxzHopB9nALUuEpTyoUstqEm5AMlJo4.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url('http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+}

@@ -21,26 +21,31 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.gonevertical.client.widgets.loginwidget.LoginWidget;
 import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.gonevertical.client.widgets.ads.Ad;
+import com.gonevertical.client.widgets.logo.Logo;
 
 public class Layout extends Composite {
 
+  interface LayoutUiBinder extends UiBinder<Widget, Layout> {}
   private static LayoutUiBinder uiBinder = GWT.create(LayoutUiBinder.class);
   @UiField SimplePanel pContent;
   @UiField LoginWidget wLogin;
-  @UiField FlowPanel adPanel;
   @UiField VerticalPanel vpWidget;
   @UiField VerticalPanel vpFooter;
-  @UiField VerticalPanel vpMain;
+  @UiField VerticalPanel vpTop;
   @UiField FlowPanel fpPlusOne;
   @UiField HTML htmlFacebook;
   @UiField HTML htmlVersion;
   @UiField HTML htmlAbout;
   @UiField HTML htmlCopyright;
+  @UiField HorizontalPanel vpContent;
+  @UiField HorizontalPanel hpfooter;
+  @UiField Ad pAd;
+  @UiField Logo pLogo;
+  @UiField VerticalPanel vpWidgetCenter;
   
   private ClientFactory clientFactory;
-
-  interface LayoutUiBinder extends UiBinder<Widget, Layout> {
-  }
 
   public Layout() {
     initWidget(uiBinder.createAndBindUi(this));
@@ -52,11 +57,6 @@ public class Layout extends Composite {
     drawVersion();
     
     drawCopyright();
-    
-    //addStyleName("test1");
-    //vpWidget.addStyleName("test2");
-    //vpMain.addStyleName("test3");
-    //vpFooter.addStyleName("test4");
   }
   
   public void setClientFactory(ClientFactory clientFactory) {
@@ -75,28 +75,12 @@ public class Layout extends Composite {
     });
   }
   
+  public void start() {
+    pAd.start();
+  }
+  
   public SimplePanel getContentPanel() {
     return pContent;
-  }
-  
-  /**
-   * moving a few seconds later, for the effect only
-   */
-  private void moveAdsDivTimed() {
-    Timer t = new Timer() {
-      public void run() {
-        moveAdsDiv();
-      }
-    };
-    t.schedule(500);
-  }
-  
-  /**
-   * move the ads div to the better location in the app layout
-   */
-  public void moveAdsDiv() {
-    RootPanel w = RootPanel.get("ads");
-    adPanel.add(w);
   }
   
   private void drawPlusOne() {
@@ -111,7 +95,7 @@ public class Layout extends Composite {
     script.setLang("javascript");
     doc.getBody().appendChild(script);
   }
-  
+   
   /**
    * draw facebook thingy at bottom 
    * it was 
